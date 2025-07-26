@@ -1,0 +1,113 @@
+{
+  "name": "sardar",
+  "version": "1.0.4",
+  "description": "Sardar Group Dashboard",
+  "homepage": "https://github.com/AJAFF7/sardar",
+  "main": "main.js",
+  "author": "AJAFF",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "postinstall": "electron-builder install-app-deps",
+    "dist_mac": " electron-builder --mac --arm64 --publish always",
+    "dist_win": "electron-builder --win --x64 --publish always",
+    "dist_linux": "electron-builder --linux deb --arm64 --publish always"
+  },
+  "build": {
+    "appId": "com.ajaff.sardar",
+    "productName": "Sardar",
+    "asar": true,
+    "copyright": "Copyright © 2025 SE. AJAFF",
+    "artifactName": "Sardar-Setup-${version}.${ext}",
+    "files": [
+      "main.js",
+      "server.log",
+      "server.js",
+      "build/**/*",
+      "models/**/*",
+      "!node_modules/.cache/**",
+      "!dist/**",
+      "package.json",
+      {
+        "from": "server",
+        "to": "server"
+      }
+    ],
+    "directories": {
+      "output": "dist",
+      "buildResources": "assets"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": true,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Sardar",
+      "installerIcon": "assets/installer-icon.ico",
+      "uninstallerIcon": "assets/uninstaller-icon.ico",
+      "installerHeaderIcon": "assets/header-icon.ico",
+      "license": "assets/license.txt"
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "assets/icon.icns"
+    },
+    "linux": {
+      "target": "deb",
+      "icon": "assets/linux/icon",
+      "category": "Utility",
+      "maintainer": "AJAFF <ajs-engineer.com>",
+      "synopsis": "Sardar Group Dashboard"
+    },
+    "publish": {
+      "provider": "github",
+      "owner": "AJAFF7",
+      "repo": "sardar",
+      "releaseType": "release",
+      "private": true
+    }
+  },
+  "dependencies": {
+    "@kubernetes/client-node": "^1.0.0",
+    "amqplib": "^0.10.5",
+    "axios": "^1.10.0",
+    "bcryptjs": "^3.0.2",
+    "cheerio": "^1.1.0",
+    "child_process": "^1.0.2",
+    "concurrently": "^8.0.1",
+    "cors": "^2.8.5",
+    "dns": "^0.2.2",
+    "electron-log": "^5.4.1",
+    "electron-updater": "^6.6.2",
+    "express": "^4.21.2",
+    "http-proxy-middleware": "^3.0.5",
+    "jsonwebtoken": "^9.0.2",
+    "local-devices": "^4.0.0",
+    "mongodb": "^6.17.0",
+    "mongoose": "^8.16.1",
+    "node-fetch": "^2.7.0",
+    "node-os-utils": "^1.3.7",
+    "os": "^0.1.2",
+    "p-limit": "^2.3.0",
+    "ping": "^0.4.4",
+    "ps-node": "^0.1.6",
+    "request": "^2.88.2",
+    "socket.io": "^4.8.1",
+    "sudo": "^1.0.3",
+    "sudo-prompt": "^9.2.1",
+    "systeminformation": "^5.27.7",
+    "util": "^0.12.5",
+    "winston": "^3.17.0",
+    "ws": "^8.18.1",
+    "xml2js": "^0.6.2"
+  },
+  "devDependencies": {
+    "electron": "^29.0.0",
+    "electron-builder": "^24.13.3"
+  }
+}

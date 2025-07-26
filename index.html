@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Sardar App - Checking for Update</title>
+        <br />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <style>
+            /* Fix body size to match BrowserWindow */
+            body,
+            html {
+                margin: 0;
+                padding: 0;
+                width: 1700px;
+                height: 1167px;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: #282828;
+                border-radius: 12px;
+                color: white;
+                font-family: Arial, sans-serif;
+                user-select: none;
+                /* Optional: prevent scroll */
+                overflow: hidden;
+                border: 1px solid #888;
+            }
+
+            #loading-text {
+                font-size: 1.5rem;
+                margin-bottom: 15px;
+                font-weight: 600;
+            }
+
+            /* Container for boxes */
+            .box-container {
+                display: flex;
+                gap: 8px; /* space between boxes */
+            }
+
+            /* Each small box style */
+            .box {
+                width: 10px;
+                height: 7px;
+                background-color: #ffa500;
+                opacity: 0;
+                transform: scale(0.7);
+                border-radius: 2px;
+                animation-fill-mode: forwards;
+                animation-name: appear;
+                animation-duration: 0.3s;
+                animation-timing-function: ease-out;
+            }
+
+            /* Appear animation */
+            @keyframes appear {
+                to {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+
+            /* Delay each box's animation to show one by one over 3 seconds */
+            /* 6 boxes, total ~3s => 0.5s between each start */
+            .box:nth-child(1) {
+                animation-delay: 0s;
+            }
+            .box:nth-child(2) {
+                animation-delay: 0.5s;
+            }
+            .box:nth-child(3) {
+                animation-delay: 1s;
+            }
+            .box:nth-child(4) {
+                animation-delay: 1.5s;
+            }
+            .box:nth-child(5) {
+                animation-delay: 2s;
+            }
+            .box:nth-child(6) {
+                animation-delay: 2.5s;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="loading-text">Checking for Update</div>
+        <div class="box-container">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </body>
+</html>
+
+<!-- <!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Sardar App - Checking for Update</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <style>
+            body,
+            html {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: #282828;
+                border-radius: 12px;
+                color: white;
+                font-family: Arial, sans-serif;
+                user-select: none;
+            }
+
+            #loading-text {
+                font-size: 1.5rem;
+                margin-bottom: 15px;
+                font-weight: 600;
+            }
+
+            /* Container for boxes */
+            .box-container {
+                display: flex;
+                gap: 8px; /* space between boxes */
+            }
+
+            /* Each small box style */
+            .box {
+                width: 10px;
+                height: 7px;
+                background-color: #ffa500;
+                opacity: 0;
+                transform: scale(0.7);
+                border-radius: 2px;
+                animation-fill-mode: forwards;
+                animation-name: appear;
+                animation-duration: 0.3s;
+                animation-timing-function: ease-out;
+            }
+
+            /* Appear animation */
+            @keyframes appear {
+                to {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+
+            /* Delay each box's animation to show one by one over 4 seconds */
+            /* 6 boxes, total ~4s => ~666ms between each start */
+
+            .box:nth-child(1) {
+                animation-delay: 0s;
+            }
+            .box:nth-child(2) {
+                animation-delay: 0.66s;
+            }
+            .box:nth-child(3) {
+                animation-delay: 1.32s;
+            }
+            .box:nth-child(4) {
+                animation-delay: 1.98s;
+            }
+            .box:nth-child(5) {
+                animation-delay: 2.64s;
+            }
+            .box:nth-child(6) {
+                animation-delay: 3.3s;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="loading-text">Checking for Update</div>
+        <div class="box-container">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </body>
+</html> -->

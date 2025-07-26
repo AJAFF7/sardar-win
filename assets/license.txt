@@ -1,0 +1,36 @@
+Copyright © 2025 SE. AJAFF. All Rights Reserved.
+
+Software License Agreement
+--------------------------
+
+This software is licensed, not sold. Unauthorized redistribution, reverse engineering, or modification of any part of this software is strictly prohibited without prior written consent from the publisher.
+
+Limited Warranty Disclaimer
+---------------------------
+This software is provided “as is,” with no guarantees or warranties, except as outlined below:
+
+- A limited warranty may apply whereby the publisher or developer may offer bug fixes, updates, or improvements to address defects found after the release.
+- This limited warranty does not guarantee that all defects will be corrected or that the software will operate without interruption or error.
+
+No Other Warranties
+-------------------
+Unless explicitly stated, no other warranties — express or implied — are provided, including, but not limited to:
+
+- Merchantability
+- Fitness for a particular purpose
+- Non-infringement
+
+Limitation of Liability
+-----------------------
+Under no circumstances shall the author, publisher, or any affiliated parties be held liable for any:
+
+- Indirect
+- Incidental
+- Special
+- Consequential damages
+
+arising from the use or inability to use this software, even if advised of the possibility of such damages.
+
+User Acknowledgment
+-------------------
+By installing or using this software, you acknowledge and accept the terms and conditions outlined in this agreement.

@@ -1,0 +1,11 @@
+Copyright © 2025 SE. AJAFF. All rights reserved.
+
+This software is licensed, not sold. Redistribution or modification is strictly prohibited without prior written permission.
+
+The software is provided "as is," without any warranty except for a limited warranty whereby the publisher or developer may provide bug fixes, updates, or improvements to address defects discovered after release. This limited warranty does not guarantee that all defects will be fixed or that the software will be error-free.
+
+Except as explicitly stated in this limited warranty, no other warranties, express or implied, including but not limited to merchantability, fitness for a particular purpose, or noninfringement, are provided.
+
+Under no circumstances shall the author or any affiliated parties be liable for any indirect, incidental, special, or consequential damages arising from the use of this software.
+
+By using this software, you acknowledge and accept these terms.
